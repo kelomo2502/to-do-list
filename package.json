@@ -10,15 +10,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zieeco/webpack-template.git"
+    "url": "git+https://github.com/kelomo2502/webpack-template.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/zieeco/webpack-template/issues"
+    "url": "https://github.com/kelomo2502/webpack-template/issues"
   },
-  "homepage": "https://github.com/zieeco/webpack-template#readme",
+  "homepage": "https://github.com/kelomo2502/webpack-template#readme",
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "css-loader": "^6.5.1",
