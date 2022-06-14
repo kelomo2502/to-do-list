@@ -1,75 +1,122 @@
-* {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 body {
-  background-color: aqua;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100vh;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  top: 200px;
+  position: relative;
+  background: aqua;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.display {
+  display: flex;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+ul > * {
+  list-style: none;
 }
 
 .container {
-  width: 60%;
-  border: 1px solid mistyrose;
-  background-color: #fff;
+  width: 60rem;
+  box-shadow: 5px 5px 11px 1px rgba(151, 151, 151, 0.63);
+  background: mistyrose;
 }
 
-.title {
-  display: flex;
+i::before {
+  font-size: 1.5rem;
+  color: rgba(146, 146, 146, 0.664);
+}
+
+.container > *,
+.task-list > * {
+  border-bottom: 1px solid rgba(228, 228, 228, 0.664);
+}
+
+#form {
+  padding: 1.5rem 4%;
   justify-content: space-between;
-  border-bottom: 1px solid rgb(196, 196, 196);
-  width: 100%;
+}
+
+#input {
+  background: transparent;
+  border: none;
+}
+
+::placeholder {
+  font-style: italic;
+  font-size: 1.3rem;
+}
+
+.header {
+  padding: 1.5rem 4%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+.item {
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 4%;
+}
+
+.item .task p {
+  margin-left: 1rem;
+  font-size: 1.3rem;
+}
+
+.item .task p:focus {
+  outline: none;
+}
+
+.task {
+  align-items: center;
+}
+
+form input {
+  min-width: calc(100% - 30px);
+  line-height: 24px;
   height: 35px;
-  font-size: 1.1rem;
+  outline: none;
 }
 
-.title p {
-  padding-left: 12px;
-  margin: 2px;
-  font-size: 1.1rem;
+form button {
+  border: 0 solid transparent;
+  background: #fff;
 }
 
-.input-section {
-  height: 35px;
-  width: 100%;
-  border-bottom: 1px solid rgb(196, 196, 196);
+.task-complete {
+  color: dodgerblue !important;
 }
 
-.todo-input {
-  width: 90%;
-  height: 90%;
-  border: transparent;
-  padding-left: 10px;
+i {
+  cursor: pointer;
+}
+
+.linethrough {
+  text-decoration: line-through;
   font-style: italic;
 }
 
-.lists {
-  border-bottom: 1px solid rgb(196, 196, 196);
-  list-style: none;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.list {
+span {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
-}
-
-.list p {
-  margin: 1px;
-}
-
-.li-div {
-  display: flex;
-}
-
-.btn {
-  background-color: #fff;
-  border: transparent;
-  height: 30px;
-  width: 100%;
-  font-size: 1rem;
+  justify-content: center;
+  align-items: center;
+  height: 20%;
+  cursor: pointer;
+  font-size: large;
+  padding-top: 25px;
+  position: relative;
+  margin-bottom: 5px;
 }
