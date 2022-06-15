@@ -1,14 +1,14 @@
 import './style.css';
-import { updateStatus } from './status.js';
-import { load } from './data.js';
-import { makeContainer, makeDrageable } from './dragdrop.js';
+import { updateStatus } from './status';
+import { load } from './data';
+import { makeContainer, makeDrageable } from './dragdrop';
 import {
   addActivity,
   ShowAll,
   removeCompleteds,
   saveone,
   removeone,
-} from './addremoveedit.js';
+} from './addremoveedit';
 
 let todolist = [];
 if (localStorage.getItem('information') === null) {
