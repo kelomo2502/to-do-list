@@ -1,7 +1,7 @@
 import './style.css';
 import { updateStatus } from './status';
 import { load } from './data';
-import { makeContainer, makeDrageable } from './dragdrop';
+import { makeContainer, makeDrageable } from './drag';
 import {
   addActivity,
   ShowAll,
