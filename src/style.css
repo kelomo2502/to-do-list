@@ -99,7 +99,7 @@ input {
   outline: none;
   border: none;
   padding-left: 8px;
-  font-style: italic
+  font-style: italic;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Exo:400,700");
@@ -207,4 +207,3 @@ input {
   animation-delay: 0s;
   animation-duration: 11s;
 }
-
