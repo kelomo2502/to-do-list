@@ -1,4 +1,4 @@
-import { save, load } from './data.js';
+import { save, load } from './data';
 
 const theBigList = document.querySelector('.lists');
 
