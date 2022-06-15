@@ -2,121 +2,209 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  top: 200px;
-  position: relative;
-  background: aqua;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  height: 100vh;
+  width: 100%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
-.display {
+.todo-list {
+  width: 50%;
+  border: 1px solid #fff;
+  background-color: #fff;
+}
+
+.title {
+  border-bottom: 1px solid rgb(196, 196, 196);
+  width: 100%;
+  height: 45px;
   display: flex;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-}
-
-ul > * {
-  list-style: none;
-}
-
-.container {
-  width: 60rem;
-  box-shadow: 5px 5px 11px 1px rgba(151, 151, 151, 0.63);
-  background: mistyrose;
-}
-
-i::before {
-  font-size: 1.5rem;
-  color: rgba(146, 146, 146, 0.664);
-}
-
-.container > *,
-.task-list > * {
-  border-bottom: 1px solid rgba(228, 228, 228, 0.664);
-}
-
-#form {
-  padding: 1.5rem 4%;
-  justify-content: space-between;
-}
-
-#input {
-  background: transparent;
-  border: none;
-}
-
-::placeholder {
-  font-style: italic;
-  font-size: 1.3rem;
-}
-
-.header {
-  padding: 1.5rem 4%;
   justify-content: space-between;
   align-items: center;
 }
 
-.header h1 {
-  margin: 0;
+.title p {
+  padding-left: 10px;
+  font-size: 20px;
+  margin: 1px;
 }
 
-.item {
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 4%;
-}
-
-.item .task p {
-  margin-left: 1rem;
-  font-size: 1.3rem;
-}
-
-.item .task p:focus {
-  outline: none;
-}
-
-.task {
-  align-items: center;
-}
-
-form input {
-  min-width: calc(100% - 30px);
-  line-height: 24px;
+.input-section {
   height: 35px;
-  outline: none;
+  width: 100%;
+  border-bottom: 1px solid rgb(196, 196, 196);
+  line-height: 35px;
 }
 
-form button {
-  border: 0 solid transparent;
-  background: #fff;
-}
-
-.task-complete {
-  color: dodgerblue !important;
-}
-
-i {
-  cursor: pointer;
-}
-
-.linethrough {
-  text-decoration: line-through;
+.todo-input {
+  width: 90%;
+  height: 90%;
+  border: transparent;
+  padding-left: 10px;
   font-style: italic;
 }
 
-span {
+.lists {
+  border-bottom: 1px solid rgb(196, 196, 196);
+  list-style: none;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.list {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 20%;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.list:hover {
+  background-color: mistyrose;
+}
+
+.list:hover .desc {
+  background-color: mistyrose;
+}
+
+.list p {
+  margin: 1px;
+}
+
+.li-div {
+  display: flex;
+}
+
+#btn {
+  background-color: lightgoldenrodyellow;
+  border: transparent;
+  height: 30px;
+  width: 100%;
+}
+
+.draggable {
+  cursor: move;
+}
+
+.line {
+  text-decoration: line-through;
+}
+
+.hidden {
+  display: none;
+}
+
+.fa {
   cursor: pointer;
-  font-size: large;
-  padding-top: 25px;
-  position: relative;
-  margin-bottom: 5px;
+}
+
+input {
+  outline: none;
+  border: none;
+  padding-left: 8px;
+  font-style: italic;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Exo:400,700");
+
+.area {
+  background: rgb(216, 248, 248);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.circles {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.circles li {
+  background-color: mistyrose;
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 20px;
+  height: 20px;
+  animation: animate 25s linear infinite;
+  bottom: -150px;
+}
+
+.circles li:nth-child(1) {
+  left: 25%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(2) {
+  left: 10%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 2s;
+  animation-duration: 12s;
+}
+
+.circles li:nth-child(3) {
+  left: 70%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 4s;
+}
+
+.circles li:nth-child(4) {
+  left: 40%;
+  width: 60px;
+  height: 60px;
+  animation-delay: 0s;
+  animation-duration: 18s;
+}
+
+.circles li:nth-child(5) {
+  left: 65%;
+  width: 20px;
+  height: 20px;
+  animation-delay: 0s;
+}
+
+.circles li:nth-child(6) {
+  left: 75%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 3s;
+}
+
+.circles li:nth-child(7) {
+  left: 35%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 7s;
+}
+
+.circles li:nth-child(8) {
+  left: 50%;
+  width: 25px;
+  height: 25px;
+  animation-delay: 15s;
+  animation-duration: 45s;
+}
+
+.circles li:nth-child(9) {
+  left: 20%;
+  width: 15px;
+  height: 15px;
+  animation-delay: 2s;
+  animation-duration: 35s;
+}
+
+.circles li:nth-child(10) {
+  left: 85%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 11s;
 }
