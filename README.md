@@ -10,6 +10,8 @@
 - JavaScript
 - Webpack
 
+##Live Demo Link [https://kelomo2502.github.io/to-do-list/]
+
 ## Getting Started
 
 To get a local clone this repository.
